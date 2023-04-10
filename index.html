@@ -674,11 +674,15 @@
         for (var i=1;i<25;i++) {
             let fig = document.getElementById('F2'+i)
             let img = document.getElementById('I2'+i)
+            let text = document.getElementById('title')
             fig.onmouseover = function show() {
                 img.style.visibility = "visible"
+                text.style.color = "red"
+        
             }
             fig.onmouseout = function show() {
                 img.style.visibility = "hidden"
+                text.style.color = "green"
             }
         }
 
